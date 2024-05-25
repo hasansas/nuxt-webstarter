@@ -1,0 +1,161 @@
+//------------------------------------------
+//	   	variables
+//------------------------------------------
+$font-family: 'Raleway', sans-serif
+$body-font-family: $font-family
+$heading-font-family: $font-family
+$body-line-height: 1.75
+$primary-color: #6644FF
+$secondary-color: #ff2d88
+$text-color: #333
+$toolbar-height: 80px
+
+//------------------------------------------
+//	   	Typography
+//------------------------------------------
+html
+  font-size: 100%
+  scroll-behavior: smooth
+
+body
+  background: white
+  font-family: $font-family
+  font-optical-sizing: auto
+  font-weight: 400
+  font-style: normal
+  line-height: $body-line-height
+
+.v-application
+  font-family: $font-family !important
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .display-4,
+  .display-3,
+  .display-2,
+  .display-1,
+  .headline,
+  .title,
+  .subtitle-1,
+  .subtitle-2,
+  .body-1,
+  .body-2,
+  .caption,
+  .overline
+    font-family: $font-family !important
+
+  p
+    margin-bottom: 1rem
+  h1, h2, h3, h4, h5
+    margin: 3rem 0 1.38rem
+    font-family: $font-family
+    font-weight: 400
+    line-height: 1.3
+  h1
+    margin-top: 0
+    font-size: 4.209rem
+  h2
+    font-size: 3.157rem
+  h3
+    font-size: 2.369rem
+  h4
+    font-size: 1.777rem
+  h5
+    font-size: 1.333rem
+  small, .text_small
+    font-size: 0.75rem
+
+//------------------------------------------
+//	   	Global
+//------------------------------------------
+.main-container
+  max-width: 1320px !important
+  position: relative
+  z-index: 10
+a
+  outline: 0
+  text-decoration: none
+  color: inherit !important
+  -webkit-transition: all 0.35s
+  transition: all 0.35s
+  &.text
+    color: inherit !important
+  &:hover
+    color: $primary-color
+    text-decoration: none
+img
+  max-width: 100%
+
+//------------------------------------------
+//	   	app bar
+//------------------------------------------
+.v-toolbar
+  z-index: 100 !important
+  .brand-logo
+    margin-top: 4px
+    text-decoration: none
+    color: inherit
+    img
+      height: 32px
+      margin-right: 16px
+      -webkit-transition: all 0.35s
+      transition: all 0.35s
+    @media screen and (min-width: 992px)
+      img
+        height: 40px
+
+  .toolbar-menu
+    position: relative
+
+    &.v-btn--active
+      color: $primary-color !important
+      &::before
+        background-color: transparent
+      &::after
+        content: ""
+        position: absolute
+        left: 16px
+        right: 16px
+        bottom: -14px
+        height: 1px
+        background-color: $primary-color
+
+//------------------------------------------
+//	   	section
+//------------------------------------------
+section
+  padding: 48px 0 32px
+
+  @media screen and (min-width: 992px)
+    padding: 96px 0 64px
+
+//------------------------------------------
+//	   	form
+//------------------------------------------
+.v-input__prepend-inner
+  margin-right: 8px !important
+
+//------------------------------------------
+//	   	button
+//------------------------------------------
+.v-btn
+  text-transform: none !important
+
+//------------------------------------------
+//	   	Color
+//------------------------------------------
+.v-application
+  .primary
+    background-color: $primary-color !important
+    border-color: $primary-color !important
+  .secondary
+    background-color: $secondary-color !important
+    border-color: $secondary-color !important
+  .primary--text
+    color: $primary-color !important
+    caret-color: $primary-color !important
+  .secondary--text
+    color: $secondary-color !important
