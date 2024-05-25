@@ -6,7 +6,7 @@
         <v-card
           flat
           color="transparent"
-          height="400"
+          height="600"
           class="d-flex align-center justify-center"
         >
           <div class="text-center">
@@ -50,7 +50,7 @@
               <v-card-title class="subtitle-1 font-weight-bold mb-1">
                 {{ item.title }}
               </v-card-title>
-              <v-card-subtitle>{{ item.description }}</v-card-subtitle>
+              <v-card-text>{{ item.description }}</v-card-text>
             </v-card>
           </v-col>
         </v-row>
@@ -78,10 +78,10 @@
                 <div class="subtitle-2 font-weight-bold">John Doe</div>
                 <div class="caption">Web Developer</div>
               </div>
-              <p class="ma-0">
+              <v-card-text class="py-0">
                 "Eiusmod dolor aute ut nulla pariatur officia consequat aute amet
                 exercitation."
-              </p>
+              </v-card-text>
             </v-card>
           </v-col>
         </v-row>
@@ -89,7 +89,7 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="call-to-action" style="background: #F5F5F5">
+    <section class="call-to-action" style="background: #f5f5f5">
       <v-container class="main-container">
         <v-card
           flat
@@ -264,5 +264,9 @@ export default {
   .section-headline {
     font-weight: bold !important;
   }
+}
+
+.hero {
+  background-color: #f5f5f5;
 }
 </style>
