@@ -2,7 +2,7 @@
   <v-app>
     <div
       class="grow d-flex flex-column flex-nowrap"
-      :style="!settingsLoaded ? 'display:none;' : ''"
+      :style="!settingsLoaded ? 'height:100vh;overflow:hidden;display:none;' : ''"
     >
       <slot />
     </div>

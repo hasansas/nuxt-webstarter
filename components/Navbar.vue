@@ -14,8 +14,8 @@
 
       <v-btn text rounded class="toolbar-menu" to="/"> Home </v-btn>
       <v-btn text rounded class="toolbar-menu" to="/blog"> Blog </v-btn>
-      <v-btn text rounded class="toolbar-menu" to="/about-us"> About Us </v-btn>
-      <v-btn text rounded class="toolbar-menu" to="/contact-us"> Contact </v-btn>
+      <v-btn text rounded class="toolbar-menu" to="/about"> About </v-btn>
+      <v-btn text rounded class="toolbar-menu" to="/contact-us"> Contact Us</v-btn>
     </v-container>
   </v-app-bar>
 </template>
