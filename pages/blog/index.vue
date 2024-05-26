@@ -7,7 +7,7 @@
         <div class="mb-16">
           <v-row>
             <v-col cols="12" md="4" v-for="i in 9" :key="i">
-              <v-card outlined rounded="xl" class="pa-2">
+              <v-card outlined rounded="xl" class="pa-2" to="/blog/detail-blog">
                 <v-card flat rounded="lg" color="grey lighten-3" class="ma-4">
                   <v-img
                     :aspect-ratio="16 / 9"
@@ -16,9 +16,9 @@
                 </v-card>
                 <v-card-text>
                   <v-chip small class="mb-4">Marketing</v-chip>
-                  <NuxtLink to="/" class="title font-weight-bold two-line black--text">
+                  <div class="title font-weight-bold two-line black--text">
                     How Content Generators Work & How To Use Them Effectively
-                  </NuxtLink>
+                  </div>
                 </v-card-text>
 
                 <v-list-item>
@@ -73,12 +73,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss">
-.two-line {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-</style>

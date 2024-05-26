@@ -43,7 +43,7 @@
                   ></v-text-field>
                   <v-text-field outlined label="Subject" required></v-text-field>
                   <v-textarea outlined label="Enter your message" auto-grow></v-textarea>
-                  <v-btn depressed rounded large dark color="black"> Send Message </v-btn>
+                  <v-btn depressed large dark color="black"> Send Message </v-btn>
                 </v-form>
               </v-card>
             </v-col>
