@@ -13,7 +13,7 @@
           <v-row>
             <v-col cols="12" md="6">
               <div class="pr-16">
-                <div class="display-1 font-weight-bold mb-4">Let's talk</div>
+                <div class="display-1 font-weight-bold mb-8">Let's talk</div>
                 <p class="mb-8">
                   Must explain to you how all this mistaken idea of denouncing pleasure
                   and praising born and I will give you a complete account of the system.
@@ -65,9 +65,9 @@ export default {
           to: "/",
         },
         {
-          text: "Contact Us",
+          text: "Contact",
           disabled: true,
-          to: "/contact-us",
+          to: "/contact",
         },
       ],
       contact: [
@@ -113,12 +113,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss">
-.two-line {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-</style>
